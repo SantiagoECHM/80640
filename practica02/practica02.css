@@ -1,0 +1,50 @@
+#sp2{
+    color:darkgoldenrod;
+}
+#sp1{
+    color:black;
+}
+*{
+    text-align: justify;
+    margin:0;
+    padding:0;
+}
+p span{
+    color:blueviolet;
+}
+/*para clases*/
+.fuente{
+    font-family:cursive;
+}
+/*todos los span agregamos el contenido \A=caracter enter */
+span.fuente::after{
+    content:'\A''\A'; white-space: pre;
+}
+span::before{
+    content: '\A'; white-space:pre;
+}
+p{
+    margin: 30px;
+}
+body{
+    background-color: beige;
+}
+h1{
+    margin-top: 20px;
+}
+
+.ui{
+    margin-left: 45px;
+    font-size: 18px;
+    font-family:monospace;
+    border-color:crimson;
+}
+#guardar{
+    color: black;
+}
+#copiar{
+    color:cadetblue;
+}
+#borrar{
+    color:forestgreen;
+}

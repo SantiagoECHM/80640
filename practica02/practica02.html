@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 02 CSS</title>
+    <!--
+        el orden de en el que css prevalece depende de su renderizado, 
+    -->
+    <!--estilo global a la página-->
+    <style>
+        span {
+            color: blue;
+        }
+
+        #sp1 {
+            color: red;
+        }
+    </style>
+    <!--estilo global al sitio-->
+    <link rel="stylesheet" href="practica02.css">
+</head>
+
+<body>
+    <h1 style="color: palevioletred;">Texto nivel 1</h1>
+    <p><span id="sp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maiores, quia dignissimos quis modi
+            hic
+            tenetur minus nisi voluptatibus aut labore similique cupiditate a molestiae sapiente perferendis,
+            consequatur illo explicabo?</span>
+            <span class="fuente">Nesciunt doloremque sed ducimus temporibus rem enim repellendus
+            nulla at, corporis quis nam, dolorem architecto perferendis commodi est aliquid fugiat officiis eveniet.
+            Assumenda soluta, consequuntur consequatur quo dolor sequi voluptatum?</span>
+            <span>Distinctio quod itaque
+            nisi corporis, amet quis quos fuga ea tempore ipsa consequuntur corrupti? Tenetur delectus maxime odio
+            praesentium vitae, accusamus necessitatibus perferendis veritatis voluptatem non, quibusdam esse! Tenetur,
+            at.</span>
+            <span id="sp2">Impedit tempora qui adipisci est a incidunt. Natus, nam eligendi? Voluptatum
+            alias possimus
+            nemo repellendus odio expedita, enim numquam tempora. Eius ad cumque, odit modi asperiores ex minima magnam.
+            Explicabo!</span>
+            <span>Quam, distinctio quos recusandae dolor nesciunt rem eos. Repudiandae fugit
+            maiores
+            laudantium neque, est dolorum quibusdam voluptatem labore ullam, possimus magnam nisi architecto ea
+            perferendis. Blanditiis tempore quidem repudiandae? Vel.</span></p>
+        <span class="fuente">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed fugiat consectetur quia ad, veritatis aliquam
+        quaerat dignissimos amet dolores quibusdam nisi cupiditate omnis quos, necessitatibus unde deserunt natus!
+        Eveniet, voluptate?</span>
+        <input type="button" id="borrar" class= "ui" value ="borrar datos">
+        <input type="button" id="copiar" class= "ui" value ="copiar datos">
+        <input type="button" id="guardar" class= "ui" value ="guardar datos">
+</body>
+
+</html>
