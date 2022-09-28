@@ -1,0 +1,23 @@
+.menu{
+    /*display: flex;*/
+    border: 1px solid;
+    /*list-style: none;/*para los puntitos que aparezcan o no*/
+    height: 100%;
+    align-items: center;
+    /*padding: 0;*/
+}
+li{
+    /*width: 40%;*/
+    background: #4c4c;
+    text-align: center;
+}
+a{
+    display: block;
+    padding: .3em;
+    text-decoration: none;
+    height: 100%;
+}
+a:hover{
+    background-color: black;
+    color:white;
+}
