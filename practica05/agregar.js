@@ -52,15 +52,21 @@ function buscarOf(){
 
 function buscar(){
     listaTodo = document.getElementsByTagName("li");
-    for (const tarea in listaTodo) {
+    for (let tarea in listaTodo) {
         if(Object.hasOwnProperty.call(listaTodo, tarea)){
-            console.log(listaTodo[tarea].childNodes[0]);
-            if(leer()==listaTodo[tarea].childNodes[0]){
+            //console.log(listaTodo[tarea].childNodes[0].value());
+            a = listaTodo[tarea].childNodes[0];
+            b = leer();
+            console.log("a ", typeof a.textContent, " b", typeof b);
+            if(a ==b){
+                console.log("ya existe");
+            }
+            /*if(leer()==listaTodo[tarea].childNodes[0].value()){
                 console.log("Existe");
             }
             else{
                 console.log("no existe");
-            }
+            }*/
         }
     }
 }
