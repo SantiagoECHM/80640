@@ -36,4 +36,12 @@ public class App
             return "Usuario Agregado";
         });//curl -X POST -d '{id:"3",nombre:"jose",pass:"123"}' http://localhost/usuarios
     }
+    /*public static void main (String[] args){
+        port(80);
+        before((req, res)->res.type("application/json"));
+        get("/usuarios", (req, res)->gson.toJson(DAO.dameUsuarios));
+        post("usuarios", (req, res)->{
+            String usuario_request=req.body();
+        });
+    }*/
 }
