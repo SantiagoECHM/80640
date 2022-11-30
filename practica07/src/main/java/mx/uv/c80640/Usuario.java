@@ -3,7 +3,7 @@ package mx.uv.c80640;
 public class Usuario {
     String id;
     String nombre;
-    String password;
+    String password	;
     public Usuario(String id, String nombre, String password) {
         this.id = id;
         this.nombre = nombre;

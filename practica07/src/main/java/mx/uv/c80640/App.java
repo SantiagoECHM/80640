@@ -19,17 +19,18 @@ public class App
     public static Map<String, Usuario> usuarios =new HashMap<>();
     public static void main( String[] args )
     {
-    port(80);
     //Inicialización de datos
     Usuario u1 = new Usuario("1", "pablo", "1234");
     Usuario u2 = new Usuario("2", "Ana", "12345");
     usuarios.put(u1.getId(), u2);
     usuarios.put(u2.getId(), u1);
         System.out.println( "Hello World!" );
+        port(80);
         before((req, res)->res.type("application/json"));
-        get("/usuario", (req, res)->gson.toJson(u1));
-        get("/usuario", (req, res)->gson.toJson(u2));
-        post("/", (req, res)->{
+        //get("/usuario", (req, res)->gson.toJson(u1));
+        get("/usuarios", (req, res)->gson.toJson(usuarios));
+        
+        post("/usuarios", (req, res)->{
             String datosFormulario = req.body();
             Usuario u = gson.fromJson(datosFormulario, Usuario.class);//convertirlo a usuario
             usuarios.put(u.getId(),u);
